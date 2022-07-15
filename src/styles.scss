@@ -1,8 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "semantic-ui-css/semantic.css";
+$lightWhite: #eeede8;
+$white: #d0cfc7;
+$black: #373737;
+$blue: #8db0d2;
+$red: #eb8d8f;
+$yellow: #f5d79d;
+$green: #aed2ad;
+$purple: #d6b7d6;
 
+body{
+  background-color: $black;
+  color: $black;
+}
+h1, h2, p {
+  color: $white;
+}
 li {
   list-style: none;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: none;
+}
+input {
+  border: none;
+  border-bottom: 0.1rem solid rgba(128, 128, 128, 0.418);
+  color: white;
 }
