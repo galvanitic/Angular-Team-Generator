@@ -1,0 +1,10 @@
+<div class="team-container">
+  <h3>Team {{ index }}</h3>
+  <ul>
+    <li
+      *ngFor="let member of team"
+    >
+      {{member | titlecase}}
+    </li>
+  </ul>
+</div>

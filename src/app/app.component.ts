@@ -27,7 +27,6 @@ export class AppComponent {
     this.numberOfTeams = Number(value);
   }
   generateTeams() {
-    console.log('hit')
     if (!this.numberOfTeams || this.numberOfTeams <= 0) {
       this.errorMessage = "Invalid number of teams.";
       return;

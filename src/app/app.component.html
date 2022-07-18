@@ -32,4 +32,11 @@
       {{errorMessage}}
     </p>
   </div>
+  <div *ngIf="teams.length" class="teams-container">
+    <app-team
+    *ngFor="let team of teams; let i = index"
+    [team]="team"
+    [index]="i+1"
+    ></app-team>
+  </div>
 </div>
